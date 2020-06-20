@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-04-25T14:04:41.103Z",
+    "end": "2020-04-25T14:04:41.122Z",
+    "duration": 19,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c56f76d4-253d-4c0a-8496-a099901c9381",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "de705668-98eb-4b9c-860b-4f2ed832e4be",
+          "title": "node接口",
+          "fullFile": "/Users/zhaoxiaohan/Downloads/work/my-project/server/test/api.spec.js",
+          "file": "/server/test/api.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test接口测试",
+              "fullTitle": "node接口 test接口测试",
+              "timedOut": false,
+              "duration": 13,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "axios.get('http://0.0.0.0:3333/questions')\n    .then(function (response) {\n        if (response.data) {\n            console.log('response.data', response.data)\n            done()\n        } else {\n            done(new Error(\"数据请求格式错误\"))\n        }\n    })\n    .catch(function (error) {\n        done(error)\n    })",
+              "err": {
+                "message": "Error: connect ECONNREFUSED 0.0.0.0:3333",
+                "estack": "Error: connect ECONNREFUSED 0.0.0.0:3333\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)",
+                "diff": null
+              },
+              "uuid": "dc3570fe-eeff-4d8d-955e-d4b5da3f2fb9",
+              "parentUUID": "de705668-98eb-4b9c-860b-4f2ed832e4be",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "dc3570fe-eeff-4d8d-955e-d4b5da3f2fb9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 13,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./docs/mochawesome-reporter"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

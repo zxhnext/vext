@@ -1,0 +1,9 @@
+{
+    "languages": ["javascript", "typescript", "jsx", "vue", "css"],
+    "threshold": 0.1,
+    "reporters": ["html", "console"],
+    "files": ["client/**"],
+    "ignore": ["dist/**", "node_modules/**", "test/**", "data/**", "css/**"],
+    "absolute": true
+}
+  

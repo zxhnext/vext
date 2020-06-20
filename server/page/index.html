@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover"><title>客户端渲染</title><style>/*! xiaohannext@qq.com */.skeleton[data-v-33d6e1b1]{padding:10px}.skeleton .skeleton-content[data-v-33d6e1b1],.skeleton .skeleton-head[data-v-33d6e1b1],.skeleton .skeleton-title[data-v-33d6e1b1]{background:#c2cfd6}.skeleton-head[data-v-33d6e1b1]{width:100px;height:100px;float:left}.skeleton-body[data-v-33d6e1b1]{margin-left:110px}.skeleton-title[data-v-33d6e1b1]{width:500px;height:60px;-webkit-animation:skeleton-stretch-data-v-33d6e1b1 .5s linear infinite alternate;animation:skeleton-stretch-data-v-33d6e1b1 .5s linear infinite alternate}.skeleton-content[data-v-33d6e1b1],.skeleton-title[data-v-33d6e1b1]{-webkit-transform-origin:left;transform-origin:left}.skeleton-content[data-v-33d6e1b1]{width:260px;height:30px;margin-top:10px;-webkit-animation:skeleton-stretch-data-v-33d6e1b1 .5s linear -.3s infinite alternate;animation:skeleton-stretch-data-v-33d6e1b1 .5s linear -.3s infinite alternate}@-webkit-keyframes skeleton-stretch-data-v-33d6e1b1{0%{-webkit-transform:scalex(1);transform:scalex(1)}to{-webkit-transform:scalex(.3);transform:scalex(.3)}}@keyframes skeleton-stretch-data-v-33d6e1b1{0%{-webkit-transform:scalex(1);transform:scalex(1)}to{-webkit-transform:scalex(.3);transform:scalex(.3)}}.skeleton[data-v-7634e5ca]{padding:10px}.skeleton .skeleton-content[data-v-7634e5ca],.skeleton .skeleton-head[data-v-7634e5ca],.skeleton .skeleton-title[data-v-7634e5ca]{background:#c2cfd6}.skeleton-head[data-v-7634e5ca]{width:100px;height:100px;float:left}.skeleton-body[data-v-7634e5ca]{margin-left:110px}.skeleton-title[data-v-7634e5ca]{width:500px;height:60px;-webkit-animation:skeleton-stretch-data-v-7634e5ca .5s linear infinite alternate;animation:skeleton-stretch-data-v-7634e5ca .5s linear infinite alternate}.skeleton-content[data-v-7634e5ca],.skeleton-title[data-v-7634e5ca]{-webkit-transform-origin:left;transform-origin:left}.skeleton-content[data-v-7634e5ca]{width:260px;height:30px;margin-top:10px;-webkit-animation:skeleton-stretch-data-v-7634e5ca .5s linear -.3s infinite alternate;animation:skeleton-stretch-data-v-7634e5ca .5s linear -.3s infinite alternate}@-webkit-keyframes skeleton-stretch-data-v-7634e5ca{0%{-webkit-transform:scalex(1);transform:scalex(1)}to{-webkit-transform:scalex(.3);transform:scalex(.3)}}@keyframes skeleton-stretch-data-v-7634e5ca{0%{-webkit-transform:scalex(1);transform:scalex(1)}to{-webkit-transform:scalex(.3);transform:scalex(.3)}}</style><link rel="shortcut icon" href=favicon.ico><link href=assets/css/styles.client.css rel=stylesheet><link href=assets/css/app.client.css rel=stylesheet></head><body><div id=app><div data-server-rendered=true><div id=Skeleton-my class=skeleton style=display:none; data-v-33d6e1b1><div class=skeleton-head data-v-33d6e1b1></div><div class=skeleton-body data-v-33d6e1b1><div class=skeleton-title data-v-33d6e1b1></div><div class=skeleton-content data-v-33d6e1b1></div></div></div><div id=Skeleton-question class=skeleton style=display:none; data-v-7634e5ca><div class=skeleton-head data-v-7634e5ca></div><div class=skeleton-body data-v-7634e5ca><div class=skeleton-title data-v-7634e5ca></div><div class=skeleton-content data-v-7634e5ca></div></div></div></div><script>var pathname = window.location.pathname;
+            var hash = window.location.hash;
+            var skeletons = [{
+                id: 'Skeleton-question',
+                el: document.querySelector('#Skeleton-question')
+            },{
+                id: 'Skeleton-my',
+                el: document.querySelector('#Skeleton-my')
+            }];
+            var isMatched = function(pathReg, mode) {
+                if (mode === 'hash') {
+                    return pathReg.test(hash.replace('#', ''));
+                }
+                else if (mode === 'history') {
+                    return pathReg.test(pathname);
+                }
+                return false;
+            };
+            var showSkeleton = function(skeletonId) {
+                for (var i = 0; i < skeletons.length; i++) {
+                    var skeleton = skeletons[i];
+                    if (skeletonId === skeleton.id) {
+                        skeleton.el.style = 'display:block;';
+                    }
+                    else {
+                        skeleton.el.style = 'display:none;';
+                    }
+                }
+            };
+            
+                if (isMatched(/^\/(?:\/)?$/i, 'history')) {
+                    showSkeleton('Skeleton-question');
+                }
+            
+                else if (isMatched(/^\/my(?:\/)?$/i, 'history')) {
+                    showSkeleton('Skeleton-my');
+                }</script></div><script type=text/javascript src=styles.b2d929c2.js></script><script type=text/javascript src=vendors~app~vendor.14f0183a.js></script><script type=text/javascript src=app.d71c4033.js></script><script type=text/javascript src=vendor.35e9d0fc.js></script></body></html>

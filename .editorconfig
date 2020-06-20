@@ -1,0 +1,10 @@
+# 项目中读到这个配置文件就可以，不用再向上级搜索
+root = true
+
+[*] # 所有文件
+charset = utf-8
+end_of_line = lf
+indent_size = 4 # tab键长度
+indent_style = space
+insert_final_newline = true # 保存时加一行空行
+trim_trailing_whitespace = true # 去掉行末的空格

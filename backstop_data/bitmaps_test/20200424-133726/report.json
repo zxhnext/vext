@@ -1,0 +1,42 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_BackstopJS_Homepage_0__0_phone.png",
+        "test": "../bitmaps_test/20200424-133726/backstop_default_BackstopJS_Homepage_0__0_phone.png",
+        "selector": "",
+        "fileName": "backstop_default_BackstopJS_Homepage_0__0_phone.png",
+        "label": "BackstopJS Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://garris.github.io/BackstopJS/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "engineErrorMsg": "Navigation timeout of 60000 ms exceeded",
+        "error": "Reference file not found /Users/zhaoxiaohan/Downloads/work/my-project/backstop_data/bitmaps_reference/backstop_default_BackstopJS_Homepage_0__0_phone.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_BackstopJS_Homepage_0__1_tablet.png",
+        "test": "../bitmaps_test/20200424-133726/backstop_default_BackstopJS_Homepage_0__1_tablet.png",
+        "selector": "",
+        "fileName": "backstop_default_BackstopJS_Homepage_0__1_tablet.png",
+        "label": "BackstopJS Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://garris.github.io/BackstopJS/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "engineErrorMsg": "Navigation timeout of 60000 ms exceeded",
+        "error": "Reference file not found /Users/zhaoxiaohan/Downloads/work/my-project/backstop_data/bitmaps_reference/backstop_default_BackstopJS_Homepage_0__1_tablet.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "backstop_default"
+}

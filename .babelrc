@@ -1,0 +1,54 @@
+{
+    "plugins": [
+      // 支持路由动态加载的写法 const Foo = () => import('../components/Foo.vue')
+      "@babel/plugin-syntax-dynamic-import",
+      // 支持jsx
+      "transform-vue-jsx",
+      // 重复使用 Babel 注入的帮助程序，以节省代码大小
+      // [
+      //   "@babel/plugin-transform-runtime",
+      //   {
+      //     "corejs": 3
+      //   }
+      // ],
+      ["@nutui/babel-plugin-separate-import", {
+        "style": "css"
+      }]
+    ],
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "chrome": "67" // 支持哪个版本以上的浏览器
+          }
+          // "useBuiltIns": "usage", // 实现按需加载
+          // "corejs": 3
+        }
+      ]
+    ]
+    // "env": {
+    //   "browser": {
+    //     "presets": [
+    //       [
+    //         "env", {
+    //           "targets": {
+    //             "browsers": ["last 2 versions", "safari >= 7"]
+    //           }
+    //         }
+    //       ]
+    //     ]
+    //   },
+    //   "node": {
+    //     "presets": [
+    //       [
+    //         "env", {
+    //           "targets": {
+    //             "node": "current"
+    //           }
+    //         }
+    //       ]
+    //     ]
+    //   }
+    // }
+  }
