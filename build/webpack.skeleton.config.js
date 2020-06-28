@@ -1,15 +1,17 @@
+/*
+ * @Author: your name
+ * @Date: 2020-06-20 21:54:48
+ * @LastEditTime: 2020-06-27 20:58:11
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /vext/build/webpack.skeleton.config.js
+ */ 
 'use strict';
 
 const path = require('path')
 const merge = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.config')
 const nodeExternals = require('webpack-node-externals')
-const {
-    cssModule,
-    stylusModule,
-} = require('./base.config')
-
-const isDev = process.env.NODE_ENV === "development"
 
 function resolve(dir) {
     return path.join(__dirname, dir)
@@ -21,13 +23,6 @@ module.exports = merge(baseWebpackConfig, {
     entry: {
         app: resolve('../client/skeleton-entry.js')
     },
-    module: {
-        rules: [
-            stylusModule(isDev),
-            cssModule(isDev)
-        ]
-    },
-
     output: Object.assign({}, baseWebpackConfig.output, {
         libraryTarget: 'commonjs2'
     }),
