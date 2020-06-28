@@ -23,7 +23,7 @@
     "test:backstop": "scripty",
     "test:ui": "scripty",
     "test:api": "scripty",
-    "precommit": "scripty",
+    "precommit": "",
     "prepush": ""
   },
   "keywords": [],
