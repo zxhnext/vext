@@ -24,7 +24,7 @@
     "test:ui": "scripty",
     "test:api": "scripty",
     "precommit": "scripty",
-    "prepush": "npm run test"
+    "prepush": ""
   },
   "keywords": [],
   "author": "",
