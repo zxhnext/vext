@@ -145,7 +145,7 @@
     "apollo-client": "^2.6.10",
     "apollo-link-http": "^1.5.17",
     "apollo-server-koa": "^2.15.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "ejs": "^3.0.1",
     "graphql": "^15.1.0",
     "graphql-tag": "^2.10.3",
