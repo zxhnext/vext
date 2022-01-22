@@ -162,7 +162,7 @@
     "koa2-cors": "^2.0.6",
     "lru-cache": "^5.1.1",
     "mongoose": "^5.9.9",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "register-service-worker": "^1.7.1",
     "sha1": "^1.1.1",
     "vue": "^2.6.11",
